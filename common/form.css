@@ -1,0 +1,78 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('font/NanumGothic.eot');
+  src: url('font/NanumGothic.eot?#iefix') format('embedded-opentype'), /* ie 6,7,8 적용 embedded-opentype ie 8,9 적용 */
+       url('font/NanumGothic.woff') format('woff'), /* ie 제외한 나머지 */
+       url('font/NanumGothic.ttf') format('truetype'),
+       url('font/NanumGothic.svg#NanumGothic') format('svg'); /*모바일브라우져를 위해서*/
+}
+@font-face {
+  font-family: 'NanumGothicBold';
+  src: url('font/NanumGothicBold.eot');
+  src: url('font/NanumGothicBold.eot?#iefix') format('embedded-opentype'), /* ie 6,7,8 적용 embedded-opentype ie 8,9 적용 */
+       url('font/NanumGothicBold.woff') format('woff'), /* ie 제외한 나머지 */
+       url('font/NanumGothicBold.ttf') format('truetype'),
+       url('font/NanumGothicBold.svg#NanumGothicBold') format('svg'); /*모바일브라우져를 위해서*/
+}
+
+/* Reset */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,blockquote,strong,b{margin:0; padding:0; font-size:14px; line-height:20px; font-weight:normal; font-family: 'NanumGothic', arial, '돋움', Helvetica, verdana, futura, tahoma, sans-serif; color:#000;}
+legend,caption{display:none;}
+fieldset{border:0;}
+ul,ol{list-style:none;}
+table{border-collapse:collapse; border-top:2px solid #333; border-bottom:2px solid #333;}
+th,td,#wrapper ul li{border:1px solid #ddd; border-width:1px 0; padding:15px;}
+input{border:1px solid #ddd; height:30px; padding:0 10px; width:80px}
+select{border:1px solid #ddd; height:32px; width:80px;}
+button{background:#777; border:1px solid #777; height:32px; color:#fff; padding:0 15px;}
+
+/* form */
+#wrapper{width:800px; margin:auto;}
+#wrapper h1{font:18px/50px NanumGothicBold; border-bottom:3px solid #cc9933; margin-bottom:30px;}
+#wrapper h2{font:14px/36px NanumGothicBold;}
+#wrapper h2 span{float:right; font-family:NanumGothic;}
+#wrapper table th{background:#eee; text-align:left; font-family:NanumGothicBold; width:150px;}/*label -> height,display:inline-block; */
+#wrapper b{color:red; font-family:NanumGothicBold; padding-right:7px}
+.W100{width:90%; margin-top:7px}
+.bg1{background:#00cc99; border:1px solid #00cc99}
+.btn{padding:30px; text-align:center}
+.btn button{width:120px; text-align:center; font:16px/40px NanumGothicBold; color:#fff; background:#333; border:1px solid #333; height:40px; margin:0 10px}
+.btn button:first-child{background:#003399; border:1px solid #003399}
+
+#layer{position:fixed; left:0; top:0; background:rgba(0,0,0,0.6); width:100%; min-height:100%; display:none;}
+#layer>div{background:#fff; width:520px; position:absolute; left:50%; top:50px; margin:0 0 0 -260px;/*항상 브라우져 가운데*/ border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,0.8); overflow:hidden; padding-bottom:30px}
+#layer h1{background:#ececec; font:30px NanumGothicBold; color:#000; padding:15px; text-align:center;}
+#layer p{padding:15px}
+#layer .btn_close{position:absolute; right:20px; top:20px; width:30px; height:30px; background:url(../images/close_01.jpg) no-repeat center; font-size:0}
+#layer .btn_close:hover{background:url(../images/close_02.jpg) no-repeat center;}
+#layer>div>div{padding:20px;}
+.step1 h2,.step3 h3{font:15px/30px NanumGothicBold; color:#fff; background:#ff3366;  margin-bottom:15px; padding-left:20px;}
+.step1 span,.step3 b{display:block; color:#999; margin-bottom:15px}
+.step1 form{text-align:center;}
+.step1 form input{width:80px; margin-left:15px; color:#999}
+
+.step2 .title{background:#eee; border-top:1px solid #333; margin-top:10px}
+.step2 .title span,.step2 .list span{display:inline-block; padding:15px 0; width:70%; font-family:NanumGothicBold; text-align:center;}
+.step2 .title span:first-child,.step2 .list span:first-child{ width:30%;}
+.step2 .list{height:150px; overflow-x:hidden; overflow-y:scroll;}
+.step2 .list span{padding:7px 0; border-bottom:1px dashed #ddd}
+
+.step3 form{text-align:center}
+.step3 form input{width:100%; margin:15px 0; color:#999}
+.step2,.step3{display:none;}
+
+#p{color:red; text-align:center}
+
+
+
+
+
+
+
+
+
+
+
+
+
